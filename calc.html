@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор</title>
+  <link rel="icon" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="">
+</head>
+
+<body>
+
+  <div class="mobMenuOverlay">
+    <div class="mobMenuSection">
+      <div class="closeMobMenu">
+        <svg width="23" height="23">
+          <use xlink:href="sprites.svg#close"></use>
+        </svg>
+      </div>
+      <div class="mobMenuLogo">
+        <img src="img/logo.png" alt="">
+      </div>
+
+      <ul class="mobMenu">
+        <li class="mobMenuItem">
+          <a href="#" class="mobMenuLink">
+            <span class="icon">
+              <img src="img/menu-icon1.svg" alt="">
+            </span>
+            <span class="text">Каталог</span>
+          </a>
+        </li>
+        <li class="mobMenuItem">
+          <a href="#" class="mobMenuLink">
+            <span class="icon">
+              <img src="img/menu-icon2.svg" alt="">
+            </span>
+            <span class="text">О нас</span>
+          </a>
+        </li>
+        <li class="mobMenuItem">
+          <a href="#" class="mobMenuLink">
+            <span class="icon">
+              <img src="img/menu-icon3.svg" alt="">
+            </span>
+            <span class="text">Где купить?</span>
+          </a>
+        </li>
+        <li class="mobMenuItem">
+          <a href="#" class="mobMenuLink">
+            <span class="icon">
+              <img src="img/menu-icon4.svg" alt="">
+            </span>
+            <span class="text">Доставка</span>
+          </a>
+        </li>
+        <li class="mobMenuItem">
+          <a href="#" class="mobMenuLink">
+            <span class="icon">
+              <img src="img/menu-icon5.svg" alt="">
+            </span>
+            <span class="text">Оплата</span>
+          </a>
+        </li>
+        <li class="mobMenuItem">
+          <a href="#" class="mobMenuLink">
+            <span class="icon">
+              <img src="img/menu-icon6.svg" alt="">
+            </span>
+            <span class="text">Калькулятор</span>
+          </a>
+        </li>
+        <li class="mobMenuItem">
+          <a href="#" class="mobMenuLink">
+            <span class="icon">
+              <img src="img/menu-icon7.svg" alt="">
+            </span>
+            <span class="text">Вопрос-ответ</span>
+          </a>
+        </li>
+        <li class="mobMenuItem">
+          <a href="#" class="mobMenuLink">
+            <span class="icon">
+              <img src="img/menu-icon8.svg" alt="">
+            </span>
+            <span class="text">Статьи</span>
+          </a>
+        </li>
+      </ul>
+
+      <form action="#" class="mobMenuSearch">
+        <input type="text" name="header-search" placeholder="Введите запрос" required>
+        <button type="submit">
+          <svg width="17" height="17">
+            <use xlink:href="sprites.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+
+      <div class="mobInfo">
+        <div class="mobInfoItem">
+          <div class="icon">
+            <img src="img/mob-info-item1.svg" alt="">
+          </div>
+          <div class="text">
+            <p>Почта:</p>
+            <p><a href="mailto:info@propitki38.ru">info@propitki38.ru</a></p>
+          </div>
+        </div>
+        <div class="mobInfoItem">
+          <div class="icon">
+            <img src="img/mob-info-item2.svg" alt="">
+          </div>
+          <div class="text">
+            <p>Телефон:</p>
+            <p><a href="83952625292">8(3952) 62-52-92</a></p>
+          </div>
+        </div>
+        <div class="mobInfoItem">
+          <div class="icon">
+            <img src="img/mob-info-item3.svg" alt="">
+          </div>
+          <div class="text">
+            <p>Время работы:</p>
+            <p>Пн-Пт, 9:00-18:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttonWrap">
+        <a href="#" class="button transparent mobMenuButton showOrderModal">Заказать звонок</a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrapper">
+      <div class="headerWrap">
+        <a href="/" class="logo">
+          <img src="img/logo.png" alt="">
+        </a>
+
+        <div class="headerInfo">
+          <div class="headerInfoItem">
+            <div class="icon">
+              <img src="img/header-info-item1.svg" alt="">
+            </div>
+            <div class="text">
+              <p>Почта:</p>
+              <p><a href="mailto:info@propitki38.ru">info@propitki38.ru</a></p>
+            </div>
+          </div>
+          <div class="headerInfoItem">
+            <div class="icon">
+              <img src="img/header-info-item2.svg" alt="">
+            </div>
+            <div class="text">
+              <p>Телефон:</p>
+              <p><a href="83952625292">8(3952) 62-52-92</a></p>
+            </div>
+          </div>
+          <div class="headerInfoItem">
+            <div class="icon">
+              <img src="img/header-info-item3.svg" alt="">
+            </div>
+            <div class="text">
+              <p>Время работы:</p>
+              <p>Пн-Пт, 9:00-18:00</p>
+            </div>
+          </div>
+        </div>
+
+        <form action="#" class="headerSearch">
+          <input type="text" name="header-search" placeholder="Введите запрос" required>
+          <button type="submit">
+            <svg width="17" height="17">
+              <use xlink:href="sprites.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="headerRight">
+          <a href="#" class="cartIcon">
+            <span class="icon">
+              <svg width="16" height="16">
+                <use xlink:href="sprites.svg#cart"></use>
+              </svg>
+            </span>
+            <span class="digit">3</span>
+          </a>
+
+          <a href="#" class="button transparent headerButton showOrderModal">Заказать звонок</a>
+
+          <div class="burger">
+            <img src="img/burger.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <ul class="topMenu">
+        <li class="topMenuItem">
+          <a href="product.html" class="topMenuLink">
+            <img src="img/menu-icon1.svg" alt="">
+            <span>Каталог</span>
+          </a>
+        </li>
+        <li class="topMenuItem">
+          <a href="#" class="topMenuLink">
+            <img src="img/menu-icon2.svg" alt="">
+            <span>О нас</span>
+          </a>
+        </li>
+        <li class="topMenuItem">
+          <a href="#" class="topMenuLink">
+            <img src="img/menu-icon3.svg" alt="">
+            <span>Где купить?</span>
+          </a>
+        </li>
+        <li class="topMenuItem">
+          <a href="#" class="topMenuLink">
+            <img src="img/menu-icon4.svg" alt="">
+            <span>Доставка</span>
+          </a>
+        </li>
+        <li class="topMenuItem">
+          <a href="#" class="topMenuLink">
+            <img src="img/menu-icon5.svg" alt="">
+            <span>Оплата</span>
+          </a>
+        </li>
+        <li class="topMenuItem">
+          <a href="#" class="topMenuLink">
+            <img src="img/menu-icon6.svg" alt="">
+            <span>Калькулятор</span>
+          </a>
+        </li>
+        <li class="topMenuItem">
+          <a href="#" class="topMenuLink">
+            <img src="img/menu-icon7.svg" alt="">
+            <span>Вопрос-ответ</span>
+          </a>
+        </li>
+        <li class="topMenuItem">
+          <a href="#" class="topMenuLink">
+            <img src="img/menu-icon8.svg" alt="">
+            <span>Статьи</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="calcSection">
+    <div class="wrapper">
+      <h1>Калькулятор</h1>
+
+      <form action="#" class="calcForm">
+        <input type="hidden" name="calc-type" value="Для дома и бани">
+        <input type="hidden" name="calc2-product" value="1">
+
+        <div class="calcContent">
+          <!-- <div class="calcBlockWrap" id="calcStep1">
+            <div class="calcBlock">
+              <div class="calcStepNum">1 шаг</div>
+              <div class="calcBlockButtons">
+                <a href="#" class="button back hidden">Назад</a>
+                <a href="#" class="button next">Далее</a>
+              </div>
+              <div class="calc1Wrap">
+                <div class="calc1Item">
+                  <input type="radio" name="calc1-type" id="calc1-type1" value="Для дома и бани" checked>
+                  <label for="calc1-type1" class="calc1ItemInner">
+                    <div class="name">Для дома и бани</div>
+                    <div class="img">
+                      <img src="img/calc1-1.png" alt="">
+                    </div>
+                  </label>
+                </div>
+                <div class="calc1Item">
+                  <input type="radio" name="calc1-type" id="calc1-type2" value="Для поверхности">
+                  <label for="calc1-type2" class="calc1ItemInner">
+                    <div class="name">Для поверхности</div>
+                    <div class="img">
+                      <img src="img/calc1-2.png" alt="">
+                    </div>
+                  </label>
+                </div>
+                <div class="calc1Item">
+                  <input type="radio" name="calc1-type" id="calc1-type3" value="По количеству м2">
+                  <label for="calc1-type3" class="calc1ItemInner">
+                    <div class="name">По количеству м2</div>
+                    <div class="img">
+                      <img src="img/calc1-3.png" alt="">
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="calcBlockWrap" id="calcStep2">
+            <div class="calcBlock">
+              <div class="calcStepNum">2 шаг</div>
+              <div class="calcBlockButtons">
+                <a href="#" class="button back opacity">Назад</a>
+                <a href="#" class="button next">Далее</a>
+              </div>
+              <h3 class="calc2Title">Для дома и бани</h3>
+              <div class="catalogWrap">
+                <div class="catalogItem active" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+                <div class="catalogItem" data-id="1">
+                  <div class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </div>
+                  <div class="catalogItemName">Пропитка акриловая для дерева</div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="calcBlockWrap" id="calcStep3">
+            <div class="calcBlock">
+              <div class="calcStepNum">3 шаг</div>
+              <div class="calcBlockButtons">
+                <a href="#" class="button back opacity">Назад</a>
+                <button type="submit" class="button">Рассчитать</a>
+              </div>
+              <div class="calcCrumbs">
+                <p>Для дома и бани</p>
+                <p>Пропитка акриловая для дерева</p>
+              </div>
+
+              <div class="calc3Wrap">
+                <div class="calc3Left">
+                  <h4>Размеры дома (м):</h4>
+                  <div class="checkoutInput">
+                    <p><strong>Ш</strong>ирина</p>
+                    <input type="number" name="width" value="10" required>
+                  </div>
+                  <div class="checkoutInput">
+                    <p><strong>Д</strong>лина</p>
+                    <input type="number" name="length" value="10" required>
+                  </div>
+                  <div class="checkoutInput">
+                    <p><strong>В</strong>ысота</p>
+                    <input type="number" name="height" value="10" required>
+                  </div>
+
+                  <h4>Кол-во слоев пропитки</h4>
+                  <div class="checkoutInput">
+                    <p><strong>К</strong>ол-во</p>
+                    <div class="checkoutSelect">
+                      <select name="amount">
+                        <option value="#">1</option>
+                        <option value="#">2</option>
+                        <option value="#">3</option>
+                        <option value="#">4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="calc3Center">
+                  <h4>Тип древесины:</h4>
+
+                  <div class="radio">
+                    <input type="radio" name="wood-type" id="wood-type1" value="wood-type1" checked>
+                    <label for="wood-type1">Пиленая</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="wood-type" id="wood-type2" value="wood-type2">
+                    <label for="wood-type2">Строганая</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="wood-type" id="wood-type3" value="wood-type3">
+                    <label for="wood-type3">Сруб</label>
+                  </div>
+                </div>
+                <div class="calc3Right">
+                  <h4>Формула и схема для расчета:</h4>
+
+                  <div class="formula">
+                    <p>((<strong>Ш</strong>+<strong>Д</strong>)*2*<strong>В</strong>-10%)*<strong>К</strong></p>
+                    <p><strong>П</strong></p>
+                  </div>
+                  <div class="formulaImg">
+                    <img src="img/formula1.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc3CheckboxWrap">
+                <div class="calc3Checkbox">
+                  <div class="checkbox">
+                    <input type="checkbox" name="clarify" id="clarify">
+                    <label for="clarify">Уточнить кол-во окон и дверей (шт)</label>
+                  </div>
+                  <div class="calc3CheckboxInputs">
+                    <div class="checkoutInput">
+                      <p><strong>О</strong>кон</p>
+                      <input type="number" name="windows" value="5">
+                    </div>
+                    <div class="checkoutInput">
+                      <p><strong>Д</strong>верей</p>
+                      <input type="number" name="doors" value="2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="calcBlockWrap" id="calcStep3-1">
+            <div class="calcBlock">
+              <div class="calcStepNum">3 шаг</div>
+              <div class="calcBlockButtons">
+                <a href="#" class="button back opacity">Назад</a>
+                <button type="submit" class="button">Рассчитать</a>
+              </div>
+              <div class="calcCrumbs">
+                <p>Для поверхности</p>
+                <p>Пропитка акриловая для дерева</p>
+              </div>
+
+              <div class="calc3Wrap">
+                <div class="calc3Left">
+                  <h4>Размеры дома (м):</h4>
+                  <div class="checkoutInput">
+                    <p><strong>Ш</strong>ирина</p>
+                    <input type="number" name="width" value="10" required>
+                  </div>
+                  <div class="checkoutInput">
+                    <p><strong>В</strong>ысота</p>
+                    <input type="number" name="height" value="10" required>
+                  </div>
+
+                  <h4>Кол-во слоев пропитки</h4>
+                  <div class="checkoutInput">
+                    <p><strong>К</strong>ол-во</p>
+                    <div class="checkoutSelect">
+                      <select name="amount">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="calc3Center">
+                  <h4>Тип древесины:</h4>
+
+                  <div class="radio">
+                    <input type="radio" name="wood-type1" id="wood-type1-1" value="wood-type1" checked>
+                    <label for="wood-type1-1">Пиленая</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="wood-type1" id="wood-type2-1" value="wood-type2">
+                    <label for="wood-type2-1">Строганая</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="wood-type1" id="wood-type3-1" value="wood-type3">
+                    <label for="wood-type3-1">Сруб</label>
+                  </div>
+                </div>
+                <div class="calc3Right">
+                  <h4>Формула и схема для расчета:</h4>
+
+                  <div class="formula">
+                    <p><strong>Ш</strong>*<strong>В</strong>*<strong>K</strong></p>
+                    <p><strong>П</strong></p>
+                  </div>
+                  <div class="formulaImg">
+                    <img src="img/formula2.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="calcBlockWrap" id="calcStep3-2">
+            <div class="calcBlock">
+              <div class="calcStepNum">3 шаг</div>
+              <div class="calcBlockButtons">
+                <a href="#" class="button back opacity">Назад</a>
+                <button type="submit" class="button">Рассчитать</a>
+              </div>
+              <div class="calcCrumbs">
+                <p>По кол-ву м2</p>
+                <p>Пропитка акриловая для дерева</p>
+              </div>
+
+              <div class="calc3Wrap">
+                <div class="calc3Left">
+                  <h4>Размеры дома (м):</h4>
+                  <div class="checkoutInput">
+                    <p><strong>П</strong>лощадь (м2):</p>
+                    <input type="number" name="area" value="100" required>
+                  </div>
+
+                  <h4>Кол-во слоев пропитки</h4>
+                  <div class="checkoutInput">
+                    <p><strong>К</strong>ол-во</p>
+                    <div class="checkoutSelect">
+                      <select name="amount">
+                        <option value="#">1</option>
+                        <option value="#">2</option>
+                        <option value="#">3</option>
+                        <option value="#">4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="calc3Center">
+                  <h4>Тип древесины:</h4>
+
+                  <div class="radio">
+                    <input type="radio" name="wood-type2" id="wood-type1-2" value="wood-type1" checked>
+                    <label for="wood-type1-2">Пиленая</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="wood-type2" id="wood-type2-2" value="wood-type2">
+                    <label for="wood-type2-2">Строганая</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="wood-type2" id="wood-type3-2" value="wood-type3">
+                    <label for="wood-type3-2">Сруб</label>
+                  </div>
+                </div>
+                <div class="calc3Right">
+                  <h4>Формула и схема для расчета:</h4>
+
+                  <div class="formula">
+                    <p><strong>Пл</strong>*<strong>К</strong></p>
+                    <p><strong>П</strong></p>
+                  </div>
+                  <div class="formulaImg">
+                    <img src="img/formula3.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="calcBlockWrap" id="calcStep4">
+            <div class="calcBlock">
+              <div class="calcStepNum">4 шаг</div>
+              <div class="calcBlockButtons">
+                <a href="#" class="button back opacity">Назад</a>
+                <a href="#" class="button return">Рассчитать заново</a>
+              </div>
+
+              <div class="calc4Title">Расход для дома и бани: <strong>90000 литров</strong></div>
+
+              <div class="calc4Wrap">
+                <div class="catalogItem" data-id="2">
+                  <a href="#" class="catalogItemImg">
+                    <img src="img/catalog1.png" alt="">
+                  </a>
+                  <div class="catalogItemName">
+                    <a href="#">Пропитка акриловая для дерева</a>
+                  </div>
+                </div>
+                <div class="calc4Right">
+                  <div class="productTextWrap">
+                    <div class="productTextAmount">
+                      <div class="cartItemAmountButton minus">
+                        <img src="img/minus.svg" alt="">
+                      </div>
+                      <input type="number" name="product-amount" value="1">
+                      <div class="cartItemAmountButton minus">
+                        <img src="img/plus.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="productTextVolume">
+                      <div class="volumeItem active">1л</div>
+                      <div class="volumeItem">5л</div>
+                      <div class="volumeItem">10л</div>
+                    </div>
+                    <div class="productPack">
+                      <div class="productPackItem active">
+                        <div class="img">
+                          <img src="img/product-pack1.png" alt="">
+                        </div>
+                        <div class="name">Мешок</div>
+                      </div>
+                      <div class="productPackItem">
+                        <div class="img">
+                          <img src="img/product-pack2.png" alt="">
+                        </div>
+                        <div class="name">Ведро</div>
+                      </div>
+                      <div class="productPackItem">
+                        <div class="img">
+                          <img src="img/product-pack3.png" alt="">
+                        </div>
+                        <div class="name">Бочка</div>
+                      </div>
+                      <div class="productPackItem">
+                        <div class="img">
+                          <img src="img/product-pack4.png" alt="">
+                        </div>
+                        <div class="name">Еврокуб</div>
+                      </div>
+                    </div>
+                    <div class="productTextPrice">10 890 рублей</div>
+                  </div>
+                  <div class="productTextButtons">
+                    <a href="#" class="button">Добавить в корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="footerWrap">
+        <div class="footerLeft">
+          <div class="copyright">&copy; 2019-2022 ПРОПИТКИ38 - лучший ассортимент пропиток в Иркутске!</div>
+          <p>Контент сайта PROPITKI38.RU носит исключительно информационный характер и ни при каких условиях и ни в
+            какой своей части не может рассматриваться как публичная оферта. Внешний вид, комплектация и стоимость
+            продукции, предлагаемой в каталоге в данный момент времени, а также перечень сервисных услуг могут
+            отличаться от представленных на сайте.</p>
+        </div>
+        <div class="footerRight">
+          <div class="footerData">
+            <p>ИНН 3808167555</p>
+            <p>ОГРН 1145151451732</p>
+            <p><a href="#" target="_blank">Политика конфеденциальности</a></p>
+          </div>
+          <div class="footerSocial">
+            <div class="socialList">
+              <a href="#" class="socialItem">
+                <svg width="18" height="14">
+                  <use xlink:href="sprites.svg#twitter"></use>
+                </svg>
+              </a>
+              <a href="#" class="socialItem">
+                <svg width="20" height="12">
+                  <use xlink:href="sprites.svg#vk"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Модальные окна -->
+
+  <div class="overlay"></div>
+
+  <div class="modal" id="orderModal">
+    <div class="closeModal">
+      <svg width="23" height="23">
+        <use xlink:href="sprites.svg#close"></use>
+      </svg>
+    </div>
+    <div class="modalTitle">Заказать звонок</div>
+
+    <form action="#" class="modalForm">
+      <input type="hidden" name="mail-url" value="mail.php">
+      <input type="hidden" name="mail-send" value="LazarrAlexandr@yandex.ru">
+      <input type="hidden" name="form-name" value="Заказать звонок">
+      <input type="hidden" name="form-type" value="type1">
+
+      <div class="input">
+        <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
+      </div>
+      <div class="input">
+        <input type="email" name="mail" placeholder="E-mail" autocomplete="off" required>
+      </div>
+      <div class="input">
+        <input type="tel" name="phone" placeholder="Телефон" autocomplete="off" required>
+      </div>
+      <div class="input">
+        <textarea name="message" placeholder="Расскажите о своей задаче"></textarea>
+      </div>
+
+      <div class="agreement">
+        <input type="checkbox" name="order-modal-agree" id="order-modal-agree" checked>
+        <label for="order-modal-agree">Согласие с <a href="#" target="_blank">политикой конфеденциальности</a></label>
+      </div>
+
+      <div class="buttonWrap">
+        <button type="submit" class="button">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal" id="thanksModal">
+    <div class="closeModal">
+      <svg width="23" height="23">
+        <use xlink:href="sprites.svg#close"></use>
+      </svg>
+    </div>
+    <div class="modalTitle">Спасибо за обращение!</div>
+    <div class="modalSubtitle">Мы свяжемся с Вами в ближайшее время.</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- JavaScript section -->
+
+  <script src="js/js-libs.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/calc.js"></script>
+
+</body>
+
+</html>
